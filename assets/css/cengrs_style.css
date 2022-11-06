@@ -1,0 +1,11 @@
+
+.dropdown-1.active {
+  color: #000;
+  border-bottom: 3px solid #e9a243;
+}
+</s
+@media screen and (max-width:1199px) {
+  .slideshow-container {
+    padding-top: 0px;
+}
+}
