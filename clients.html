@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cengrs | Client </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.cengrs.com/assets/images/favicon.jpg" id="favicon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--Below 2 lines "CSS" Only for Main Page -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.cengrs.com/assets/css/style.css">
+  <link rel="stylesheet" href="https://www.cengrs.com/assets/css/cengrs_style.css">
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/sweetalert2/6.5.5/sweetalert2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/6.5.5/sweetalert2.min.css">
+  
+  
+    <script src="https://www.cengrs.com/assets/js/cengrs-validate.js"></script>
+  
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106762418-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106762418-1');
+  </script>
+</head>
+
+<body>
+  <style>
+    .dropdown-1 span{
+      padding-left:10px;
+    } 
+  </style>
+  <!-- Navbar -->
+  <div class="navigation header">
+    <ul class="navi">
+      <a href="https://www.cengrs.com" class="dropbtn-1">
+        <li class="dropdown-1 image-logo">
+          <img src="https://www.cengrs.com/assets/images/img-logo.png" class="img-responsive">
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/about" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>About Us</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/services" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Services</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/projects" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Projects</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/clients" class="dropbtn-1">
+        <li class="dropdown-1  active " ><span>Clients</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/knowledge" class="dropbtn-1">
+        <li class="dropdown-1 know " ><span>Knowledge <br/> &nbsp Center</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/career" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Careers</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/contact" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Contact Us</span></li>
+      </a>
+    </ul>
+  </div>
+
+      <!-- For Mobile-Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-header">
+     <div class="image-section">
+      <a href="https://www.cengrs.com">
+        <img src="https://www.cengrs.com/assets/images/img-logo.png" class="img-responsive">
+      </a>
+    </div>
+    <div id="nav-toggle"> 
+      <span></span>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 m-bg m-menu" id="m_menu">
+    <div class="row">
+      <ul>
+        <a href="https://www.cengrs.com/about">
+          <li class="m-hide"> About Us </li>
+        </a>
+        <a href="https://www.cengrs.com/services">
+          <li class="m-hide"> Services </li>
+        </a>
+        <a href="https://www.cengrs.com/projects">
+          <li class="m-hide"> Projects </li> 
+        </a>
+        <a href="https://www.cengrs.com/clients">
+          <li class="m-hide"> Clients </li>   
+        </a>           
+        <a href="https://www.cengrs.com/knowledge">
+          <li class="m-hide"> Knowledge Center </li>
+        </a>
+        <a href="https://www.cengrs.com/career">
+          <li class="m-hide"> Careers </li>
+        </a>
+        <a href="https://www.cengrs.com/contact">
+          <li class="m-hide"> Contact Us </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End of Mobile-Menu -->
+<!-- End of navbar -->
+<div id="content">
+  <style type="text/css">
+html, body {
+    background-color: #fff !important;
+}
+.dropdown-1.active {
+  color: #000;
+  border-bottom: 3px solid #e9a243;
+}
+.btn-default:focus {
+  background: #0E9AD7;
+}
+nav .nav-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*margin: 2rem 2.3125rem 0;*/
+  text-align: right;
+  margin-right: 0px;
+}
+nav .nav-li {
+  display: inline-block;
+  font-size: 1em;
+}
+nav .nav-li a {
+  display: block;
+  font-size: 16px;
+  margin: 0 0 0 18px;
+  overflow: hidden;
+  padding: 1rem .5rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.5s linear 0.2s;
+}
+
+nav .nav-li a:hover, nav .nav-li a:focus {
+  text-decoration: none;
+  /*background-color: #DCEFF7;*/
+  transition: all 0.3s linear;
+  color: #000;
+  /*border-bottom: 2px solid #e9a243;*/
+}
+.nav-ul > .active{
+  color:#009EE2;
+}
+@media  screen and (max-width:768px) {
+  nav .nav-ul{
+    text-align: center !important;
+  }
+}  
+@media  screen and (max-width:468px) {
+  .col-md-3.col-sm-3.col-xs-6.box.filter {
+    margin-left: 29%;
+  }
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="text-center services" style="margin-bottom: 0;"> Clients </div>
+        <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 30px;">
+      <div class="row">
+        <nav>
+          <ul class="nav-ul">
+            <li class="nav-li filter-button active all-act" id="all" data-filter="all">
+              <a href="javascript:void(0);"> All </a>
+            </li>
+
+                        <li class="nav-li filter-button" id="client-1" data-filter="client-1">
+              <a href="javascript:void(0);"> PSU </a>
+            </li>
+                        <li class="nav-li filter-button" id="client-2" data-filter="client-2">
+              <a href="javascript:void(0);"> Pvt. Sector </a>
+            </li>
+                        <li class="nav-li filter-button" id="client-3" data-filter="client-3">
+              <a href="javascript:void(0);"> Govt. Sector </a>
+            </li>
+                        <li class="nav-li filter-button" id="client-4" data-filter="client-4">
+              <a href="javascript:void(0);"> Engg. Consultancy </a>
+            </li>
+                        <li class="nav-li filter-button" id="client-5" data-filter="client-5">
+              <a href="javascript:void(0);"> Real Estate </a>
+            </li>
+                        <li class="nav-li filter-button" id="client-6" data-filter="client-6">
+              <a href="javascript:void(0);"> Intl. Clients </a>
+            </li>
+                        
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="container">
+        <div class="">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="">
+              <div class="container1">
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1491215192-rites.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491034559-samsung.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1491461593-bhel.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1491461777-vizag.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461802-alstom.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461815-hcc.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461829-ireo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461839-jaypee.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461870-mahagun.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461887-lanco.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461901-nippon.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1491461958-spire.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492584772-adani.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492752278-BP.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598383-eil.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598394-epi.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598403-gail.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598413-hp.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598425-igl.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598441-indianoil.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598451-nbcc.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598463-ntpc.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904019-NPCIL-Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492752146-powergrid.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1492598496-sail.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604280-reliance-enegry.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604310-bgr-energy.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604347-l&t.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604359-punj.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604370-gvk.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604380-gmr.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604412-jindal.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604430-HCC.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604446-SHREE.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604455-gammon.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604484-welspun.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1492604656-dlf.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606460-Department_of_Telecommunications_logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606490-cpwd.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606508-pwd.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606521-Archaeological-Survey-of-India.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606531-Indian_Railway.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606597-DRDO-logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1492606609-heavy.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675223-AJNARA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675269-AMRAPALI.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675283-BESTECH.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675294-DLF.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675312-EMAAR.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675573-INDIABULL.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675348-GODREJ.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675365-IREO.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675379-MAHAGUN.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675390-OMEX.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675412-RAHEJA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675431-SHIPRA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675442-SMCC.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675454-SOBHA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675467-SUPERTECH.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675478-VATIKA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-5">
+                  <img src="https://www.cengrs.com/assets/clients/1492675681-PURI.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693064-CP_KUKREJA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693081-EGIS.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693095-FITCHNER.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693161-STUP.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693173-TANDON.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693206-TATA_CONSULTING.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1492693225-TATACONSULTING.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693358-cummin.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693368-DAMES_ANDMOORE.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693378-ENVIRON.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693391-HYUNDAI.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693404-JICA.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693416-MITSU.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693434-NIPPON.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693445-SNC.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1492693456-SVERDRUP.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904213-CPCL-Logo-short.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904266-DMRC-LOGO-short.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904349-Mecon Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904697-THDC India Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904726-uEIL logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904854-NCRTC-LOGO.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904906-BEL Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904917-Delhi Mumbai Industrial Corridor-(DMICDC)-logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-1">
+                  <img src="https://www.cengrs.com/assets/clients/1644904933-Meja-Urja-Nigam - logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1644904983-BARC Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1644905005-Seabird Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-3">
+                  <img src="https://www.cengrs.com/assets/clients/1644907252-Chattisgarh Rail.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1644908118-ICT-LOGO.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-6">
+                  <img src="https://www.cengrs.com/assets/clients/1645183910-SPC-Beiging-Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1645184000-Assystem-Stup logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1645184017-AECOM-Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-4">
+                  <img src="https://www.cengrs.com/assets/clients/1645251480-Feedback Infra.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645252468-Afcons.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645252521-GE Power Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419703-ISGEC Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419737-GE T&D Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419757-L&T-MHI Power.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419859-Maccaferri Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419869-Noida International Airport.jpeg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419958-Punj Lloyd - logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419970-Reliance-Energy-logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419982-ReNew Power Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645419993-SB Energy Logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420003-ShubhShree Engg-logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420028-Tecnimont Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420040-Torrent-Power - logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420051-Vikram Solar logo.png" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420243-Doosan Power Logo.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420612-FEMC-Pratibha JV.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420709-P&G.jpg" class="img-responsive">
+                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-6 box filter client-2">
+                  <img src="https://www.cengrs.com/assets/clients/1645420910-Strongplant.jpg" class="img-responsive">
+                </div>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      </div>
+</div>
+</div>
+<!-- Footer Content -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+  <div class="row">
+    <footer>
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h4>QUICK LINKS</h4>
+            <ul class="footer_nav">
+              <li><a href="https://www.cengrs.com/about"> About us </a></li>
+              <li><a href="https://www.cengrs.com/services"> Services </a></li>
+              <li><a href="https://www.cengrs.com/projects"> Projects </a></li>
+              <li><a href="https://www.cengrs.com/clients"> Clients </a></li>
+              <li><a href="https://www.cengrs.com/knowledge"> Knowledge Center </a></li>
+              <li><a href="https://www.cengrs.com/career"> Careers </a></li>
+              <li><a href="https://www.cengrs.com/contact"> Contact </a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 certficate_mobile">
+            <h4>CERTIFICATION</h4>
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/NABL-Certificate-TC-7134.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/logo2.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/NABL-Certificate-TC-7134.pdf" target="_blank">ISO/IEC:17025:2017 <br> NABL Accredited Laboratory</a>
+            </div>
+
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/ISO-Certificate-updated.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/ISO-45001_Certificate.jpg" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/ISO-Certificate-updated.pdf" target="_blank">ISO: 9001 : 2015 <br> Certified Company</a>
+            </div> 
+
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/ISO-45001_Certificate_Cengrs.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/ISO-45001_Certificate.jpg" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/ISO-45001_Certificate_Cengrs.pdf" target="_blank">ISO 45001:2018 <br> Certified Company</a>
+            </div>
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/MSME-Certificate.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/msme-logo.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/MSME-Certificate.pdf" target="_blank" style="margin-top:18px;">MSME Certification</a>
+            </div>
+       <!--     <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/NSIC-Certificate.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/nsic.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/NSIC-Certificate.pdf" target="_blank" style="margin-top:15px;">NSIC Certification</a>
+            </div> -->
+
+            <div style="margin-top:15px;">
+              <a class="custom_buttom" href="https://www.cengrs.com/assets/pdf/Cengrs-Company-Profile.pdf" target="_blank" style="padding-left:15px;padding-right:15px;"> 
+                Company Profile
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 contact_form_mobile">
+            <h4>CONTACT ADDRESS</h4>
+                            <p>A-100, Sector 63, Noida, Uttar Pradesh 201309</p>
+              <p>Call: +91 120 420 6771</p>
+              <p>GSTIN  09AAACC0043N1ZS (Noida)</p>
+              <p>GSTIN 07AAACC0043N1ZW (Delhi)</p>
+              <p>Email: <a href="mailto:contact@cengrs.com">contact@cengrs.com</a></p>
+              <div class="footer_social">
+                Follow us 
+                <a href="https://www.facebook.com/cengrs" target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/fb.png">
+                </a>
+                <a href="https://www.linkedin.com/company/cengrs-geotechnica-pvt.-ltd." target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/in.png">
+                </a>
+                <a href="https://plus.google.com/+CengrsGeotechnica" target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/google.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div> <!-- End of col-lg-12 for footer -->
+
+  <!-- Scroll to top -->
+  <span id="s_top"> </span>
+
+  <script src="https://www.cengrs.com/assets/js/script.js"></script>
+  <script src="https://www.cengrs.com/assets/js/jquery_mobile.min.js"></script>
+  <script>
+    document.querySelector("#nav-toggle").addEventListener("click", function() { this.classList.toggle("active"); });
+    $(document).ready(function(){
+      $('#nav-toggle').click(function(){
+        $('#m_menu').slideToggle().css('display','block');
+      });
+      
+       $(".carousel").swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+          if (direction == 'left') $(this).carousel('next');
+          if (direction == 'right') $(this).carousel('prev');
+        },
+        allowPageScroll:"vertical"
+      });
+    });
+  </script>
+</body>
+</html>
+

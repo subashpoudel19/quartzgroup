@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cengrs | Projects </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.cengrs.com/assets/images/favicon.jpg" id="favicon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--Below 2 lines "CSS" Only for Main Page -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.cengrs.com/assets/css/style.css">
+  <link rel="stylesheet" href="https://www.cengrs.com/assets/css/cengrs_style.css">
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/sweetalert2/6.5.5/sweetalert2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/6.5.5/sweetalert2.min.css">
+  <!-- Material Design Lite -->
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<!-- Material Design icon font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  
+    <script src="https://www.cengrs.com/assets/js/cengrs-validate.js"></script>
+  
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106762418-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106762418-1');
+  </script>
+</head>
+
+<body>
+  <style>
+    .dropdown-1 span{
+      padding-left:10px;
+    } 
+  </style>
+  <!-- Navbar -->
+  <div class="navigation header">
+    <ul class="navi">
+      <a href="https://www.cengrs.com" class="dropbtn-1">
+        <li class="dropdown-1 image-logo">
+          <img src="https://www.cengrs.com/assets/images/img-logo.png" class="img-responsive">
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/about" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>About Us</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/services" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Services</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/projects" class="dropbtn-1">
+        <li class="dropdown-1  active " ><span>Projects</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/clients" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Clients</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/knowledge" class="dropbtn-1">
+        <li class="dropdown-1 know " ><span>Knowledge <br/> &nbsp Center</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/career" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Careers</span>
+        </li>
+      </a>
+      <a href="https://www.cengrs.com/contact" class="dropbtn-1">
+        <li class="dropdown-1 " ><span>Contact Us</span></li>
+      </a>
+    </ul>
+  </div>
+
+      <!-- For Mobile-Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-header">
+     <div class="image-section">
+      <a href="https://www.cengrs.com">
+        <img src="https://www.cengrs.com/assets/images/img-logo.png" class="img-responsive">
+      </a>
+    </div>
+    <div id="nav-toggle"> 
+      <span></span>
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 m-bg m-menu" id="m_menu">
+    <div class="row">
+      <ul>
+        <a href="https://www.cengrs.com/about">
+          <li class="m-hide"> About Us </li>
+        </a>
+        <a href="https://www.cengrs.com/services">
+          <li class="m-hide"> Services </li>
+        </a>
+        <a href="https://www.cengrs.com/projects">
+          <li class="m-hide"> Projects </li> 
+        </a>
+        <a href="https://www.cengrs.com/clients">
+          <li class="m-hide"> Clients </li>   
+        </a>           
+        <a href="https://www.cengrs.com/knowledge">
+          <li class="m-hide"> Knowledge Center </li>
+        </a>
+        <a href="https://www.cengrs.com/career">
+          <li class="m-hide"> Careers </li>
+        </a>
+        <a href="https://www.cengrs.com/contact">
+          <li class="m-hide"> Contact Us </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End of Mobile-Menu -->
+<!-- End of navbar -->
+<div id="content">
+  <style>
+	.center{
+		text-align: center;
+	}
+	.grid-center{
+		display: inline-block;
+		width:24.5%;
+	}
+	.pro-img{
+		height:150px;
+	}
+
+	a{
+		color:grey;
+		font-weight: 400;
+	}.upload_text{
+		padding:10px;
+		margin-top:5px;
+	}
+	.modal-content {
+	    top: 20%;
+	    width: 600px;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.modal-content h2 {
+	    font-size: 24px;
+	}
+	span.close {
+	    background: #000;
+	    opacity: 1 !important;
+	    color: #fff !important;
+	    width: 30px;
+	    height: 30px;
+	    line-height: 30px;
+	}
+	.btn_cn button {
+	    display: block;
+	    float: none;
+	    margin: 0 auto;
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	    border-radius: 5px;
+	    width: 150px;
+	}
+	@media (max-width: 990px){
+		.center{
+			text-align: left;
+		}
+		.grid-center{
+			display: inline-block;
+			width:50%;
+			float: left;
+			padding: 10px;
+		}
+	}
+	@media (max-width: 468px){
+		.center{
+			text-align: left;
+		}
+		.grid-center{
+			display: inline-block;
+			width:100%;
+			float: left;
+			padding: 0px;
+		}
+	}
+</style>
+<div class="container nav-border" id="my-subhead">
+	<div class="row">
+		<nav id="navigation">
+			<ul class="ul-nav">
+				<li><a href="#projects">PROJECT PORTFOLIO</a></li>
+				<li><a href="#project_map">ON GOING PROJECT</a></li>  
+				           
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12" id="projects" style="padding-bottom: 60px;">
+			<div class="row">
+				<div class="services text-center projct">Project Portfolio</div>
+																<div style="background-color:#F1F1F1; padding-bottom:40px;" class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Energy</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																<div class="grid-center res " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=thermal-power-plants">
+											<img src="https://www.cengrs.com/assets/upload/1495611221-Power Plants.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=thermal-power-plants" style="color:#fff;">Thermal Power Plants</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1579952907-List of Power Plants.pdf" target="_blank" name="Thermal Power Plants" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Thermal Power Plants" docurl="https://www.cengrs.com/assets/pdf/1579952907-List of Power Plants.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=refineries-and-petrochemicals">
+											<img src="https://www.cengrs.com/assets/upload/1495611276-Refineries.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=refineries-and-petrochemicals" style="color:#fff;">Refineries and Petrochemicals</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1579953255-List of Refineries & Petrochemicals.pdf" target="_blank" name="Refineries and Petrochemicals" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Refineries and Petrochemicals" docurl="https://www.cengrs.com/assets/pdf/1579953255-List of Refineries & Petrochemicals.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=solar-power-plants">
+											<img src="https://www.cengrs.com/assets/upload/1495611335-Solar Power Plants.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=solar-power-plants" style="color:#fff;">Solar Power Plants</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1579953225-List of Solar Power Plants.pdf" target="_blank" name="Solar Power Plants" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Solar Power Plants" docurl="https://www.cengrs.com/assets/pdf/1579953225-List of Solar Power Plants.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=substations">
+											<img src="https://www.cengrs.com/assets/upload/1495611376-Substation-16.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=substations" style="color:#fff;">Substations</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580634774-List for Sub-stations.pdf" target="_blank" name="Substations" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Substations" docurl="https://www.cengrs.com/assets/pdf/1580634774-List for Sub-stations.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=pipeline">
+											<img src="https://www.cengrs.com/assets/upload/1495611410-Pipeline.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=pipeline" style="color:#fff;">Pipeline</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580635181-List - Pipeline Projects.pdf" target="_blank" name="Pipeline" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Pipeline" docurl="https://www.cengrs.com/assets/pdf/1580635181-List - Pipeline Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=transmission-line">
+											<img src="https://www.cengrs.com/assets/upload/1495611453-Transmission Line.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=transmission-line" style="color:#fff;">Transmission Line</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1495625584-List - Transmissionline Projects.pdf" target="_blank" name="Transmission Line" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Transmission Line" docurl="https://www.cengrs.com/assets/pdf/1495625584-List - Transmissionline Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																																																																																																																																																																																																							</div>
+							</div>
+		</div>
+
+	</div>
+						<div  class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Real Estate</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																																																																																																																												<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=high-rise-buildings">
+											<img src="https://www.cengrs.com/assets/upload/1495611577-High Rise Buildings.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=high-rise-buildings" style="color:#fff;">High Rise Buildings</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580637821-List of High-rise projects.pdf" target="_blank" name="High Rise Buildings" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="High Rise Buildings" docurl="https://www.cengrs.com/assets/pdf/1580637821-List of High-rise projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=commercial-and-residential">
+											<img src="https://www.cengrs.com/assets/upload/1495611615-Commercial and Residential.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=commercial-and-residential" style="color:#fff;">Commercial and Residential</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1579953158-List of Commercial & Residential Infrastructure.pdf" target="_blank" name="Commercial and Residential" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Commercial and Residential" docurl="https://www.cengrs.com/assets/pdf/1579953158-List of Commercial & Residential Infrastructure.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																																																																																																																																																																			</div>
+							</div>
+		</div>
+
+	</div>
+						<div style="background-color:#F1F1F1; padding-bottom:40px;" class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Institutional</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																																																																																																																																																																<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=schools">
+											<img src="https://www.cengrs.com/assets/upload/1495611653-Schools.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=schools" style="color:#fff;">Schools</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580639672-List of School Projects.pdf" target="_blank" name="Schools" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Schools" docurl="https://www.cengrs.com/assets/pdf/1580639672-List of School Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=hospitals">
+											<img src="https://www.cengrs.com/assets/upload/1495611678-Hospitals.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=hospitals" style="color:#fff;">Hospitals</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580642418-List of Hospitals Projects.pdf" target="_blank" name="Hospitals" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Hospitals" docurl="https://www.cengrs.com/assets/pdf/1580642418-List of Hospitals Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=embassy">
+											<img src="https://www.cengrs.com/assets/upload/1495611703-Embassy.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=embassy" style="color:#fff;">Embassy</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1495625426-List of Embassies Projects.pdf" target="_blank" name="Embassy" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Embassy" docurl="https://www.cengrs.com/assets/pdf/1495625426-List of Embassies Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																																																																																																													</div>
+							</div>
+		</div>
+
+	</div>
+						<div  class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Manufacturing</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																																																																																																																																																																																																																						<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=industries">
+											<img src="https://www.cengrs.com/assets/upload/1495611761-Industries.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=industries" style="color:#fff;">Industries</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580645031-List of Industries.pdf" target="_blank" name="Industries" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Industries" docurl="https://www.cengrs.com/assets/pdf/1580645031-List of Industries.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=cement-plants">
+											<img src="https://www.cengrs.com/assets/upload/1495611788-Cement Plants.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=cement-plants" style="color:#fff;">Cement Plants</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580641447-List of Cement Plants.pdf" target="_blank" name="Cement Plants" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Cement Plants" docurl="https://www.cengrs.com/assets/pdf/1580641447-List of Cement Plants.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																																																																									</div>
+							</div>
+		</div>
+
+	</div>
+						<div style="background-color:#F1F1F1; padding-bottom:40px;" class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Metro and Railway</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																																																																																																																																																																																																																																																										<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=metro">
+											<img src="https://www.cengrs.com/assets/upload/1495611820-metro.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=metro" style="color:#fff;">Metro</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1579953194-List of Metro & Railways.pdf" target="_blank" name="Metro" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Metro" docurl="https://www.cengrs.com/assets/pdf/1579953194-List of Metro & Railways.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																															<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=railways-including-dfcc">
+											<img src="https://www.cengrs.com/assets/upload/1495611849-Railways (including DFCC).png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=railways-including-dfcc" style="color:#fff;">Railways (including DFCC)</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580642991-List of DFCC Projects.pdf" target="_blank" name="Railways (including DFCC)" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Railways (including DFCC)" docurl="https://www.cengrs.com/assets/pdf/1580642991-List of DFCC Projects.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																																					</div>
+							</div>
+		</div>
+
+	</div>
+						<div  class="mr_top">
+					<div class="container">
+						<div class="row mr_top">
+							<div class="text-center semi_hed">Highways</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+																																																																																																																																																																																																																																																																																																														<div class="grid-center res  mr_top " align="center">
+									<div class="product-box images">
+										<a href="https://www.cengrs.com/project-detail?project=bridges-highways-flyovers">
+											<img src="https://www.cengrs.com/assets/upload/1495611877-BRIDGE.png" alt="" class="align-center pro-img img-responsive">
+										</a>
+
+								
+								<div class="urun-text">
+									<a href="https://www.cengrs.com/project-detail?project=bridges-highways-flyovers" style="color:#fff;">Bridges, Highways & Flyovers</a> 
+									<!-- <a href="https://www.cengrs.com/assets/pdf/1580634514-List for Sub-stations.pdf" target="_blank" name="Bridges, Highways & Flyovers" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a> -->
+
+									<a href="#" name="Bridges, Highways & Flyovers" docurl="https://www.cengrs.com/assets/pdf/1580634514-List for Sub-stations.pdf" class="popopenclsb2b"><span style="float:right;"><img src="https://www.cengrs.com/assets/images/right-arrow.png"></span></a>
+								</div>
+								<!-- <div class="click-arrow mr_top-right">
+							</div> -->
+						</div>
+					</div>
+																			</div>
+							</div>
+		</div>
+
+	</div>
+			</div>
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12" id="project_map">
+	<div class="row">
+		<div class="container">
+			<div class="services text-center projct">On Going Project</div>
+			<form action="projects#project_map">
+				<div class="mdl-grid">
+					<!-- <div class="mdl-layout-spacer mdl-grid--no-spacing"></div> -->
+					<div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+						<select class="form-control arrow" name="project" id="project"  style="margin-top:5px;">
+							<option value=""> Project *</option>
+														<option value="energy" >Energy </option>
+														<option value="real-estate" >Real Estate </option>
+														<option value="institutional" >Institutional </option>
+														<option value="manufacturing" >Manufacturing </option>
+														<option value="metro-and-railway" >Metro and Railway </option>
+														<option value="highways" >Highways </option>
+													</select>
+					</div>
+
+					<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+						<select class="form-control arrow" name="service" id="service"  style="margin-top:5px;">
+							<option value=""> Service *</option>
+														<option value="geotechnical-consultancy" > Geotechnical Consultancy </option>
+														<option value="foundation-testing" > Foundation Testing </option>
+														<option value="geotechnical-investigations" > Geotechnical Investigations </option>
+														<option value="laboratory-testing" > Laboratory Testing </option>
+														<option value="geophysical-surveys" > Geophysical Surveys </option>
+														<option value="topographical-and-hydrogeological-surveys" > Topographical ​​and Hydrogeological Surveys </option>
+													</select>
+					</div>
+
+
+					<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
+						<select class="form-control arrow" name="state" id="state"  style="margin-top:5px;">
+							<option value=""> State *</option>
+														<option value="Andhra Pradesh" >Andhra Pradesh</option>
+														<option value="Assam" >Assam</option>
+														<option value="Bangladesh" >Bangladesh</option>
+														<option value="Bihar" >Bihar</option>
+														<option value="Chhattisgarh" >Chhattisgarh</option>
+														<option value="Delhi" >Delhi</option>
+														<option value="Gujarat" >Gujarat</option>
+														<option value="Haryana" >Haryana</option>
+														<option value="Jharkahand" >Jharkahand</option>
+														<option value="Jharkhand" >Jharkhand</option>
+														<option value="Karnataka" >Karnataka</option>
+														<option value="Kerla" >Kerla</option>
+														<option value="Madhya Pradesh" >Madhya Pradesh</option>
+														<option value="Maharashtra" >Maharashtra</option>
+														<option value="New Delhi" >New Delhi</option>
+														<option value="Odisha" >Odisha</option>
+														<option value="Punjab" >Punjab</option>
+														<option value="Rajasthan" >Rajasthan</option>
+														<option value="Tamil Nadu" >Tamil Nadu</option>
+														<option value="Tamilnadu" >Tamilnadu</option>
+														<option value="Telagana" >Telagana</option>
+														<option value="Telangana" >Telangana</option>
+														<option value="Telengana" >Telengana</option>
+														<option value="Uttar Pradesh" >Uttar Pradesh</option>
+														<option value="Uttar Pradsh " >Uttar Pradsh </option>
+													</select>
+					</div>
+
+					
+					<div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--4-col-phone" style="text-align:center;">
+						<button class="upload_text submit submit_button" type="submit">Search</button>
+					</div>
+					<!--  <div class="mdl-layout-spacer"></div> -->
+				</div>
+			</form>
+		</div>
+		<div style="width:100%">
+			<div id="storemap" style="width:100%;height:800px;"></div>
+		</div>
+	</div>
+</div>
+
+
+<div id="myModal" class="modal">
+	<div class="modal-content">    
+	    <p>
+	        <span class="close">&times;</span>
+	        
+	        <h2>Fill Details to download file.</h2>
+	    </p>
+	    <div class="form">
+
+	    	<form action="https://www.cengrs.com/projects" method="post" class="form">
+              <input type="hidden" name="_token" value="g1hN2JbmYAWf6xkXEO5bnJFl3p5upjU4IbMaDPlT">
+              
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="fullname" name="name" onblur="fname();" value="">
+                <label class="mdl-textfield__label" for="fullname"> Name * </label>
+              </div>
+              
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="email" name="email" onblur="validate_email();" value="">
+                <label class="mdl-textfield__label" for="email"> Email * </label>
+              </div>
+              
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="mobile" onblur="validate_mobile();" name="phone_number" value="">
+                <label class="mdl-textfield__label" for="mobile">Phone Number *</label>
+              </div>
+              
+               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="company" name="company" value="">
+                        <label class="mdl-textfield__label" for="company"> Company *</label>
+                      </div>
+
+              <div><input type="hidden" name="document_name" value="" id="document_name"></div>
+              <div><input type="hidden" name="document_name_url" value="" id="document_name_url"></div>
+
+              <div class="btn_cn"><button type="submit" class="submit">Submit</button></div>
+
+            </form>
+	    	
+	    </div>
+	</div>
+</div>
+
+</div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOBNHyv9rDPEi8qNvDr_Y7sQe08cFx1W8"></script>
+<script type="text/javascript">
+
+	var w_width     =   $(window).width();
+	if(w_width<600){
+		var z = 5;
+	}else{
+		var z = 5;
+	}
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: z,
+                    zoomControl: true,
+                    scaleControl: false,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(20.5937,78.9629),
+                };
+
+
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('storemap');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var prev_infowindow =false; 
+
+                // Let's also add a marker while we're at it
+                                	var data = "<div style='width:100%;float:right;'><p><b>Category - </b>Energy</p><p><b>Project Title - </b>Geotechnical Investigation for 9 MMTPA Cauvery Basin Refinery (CBR) Project at Nagapattinam, Tamilnadu</p> <p><b>Client - </b>Chennai Petroleum Corporation Limited</p> <p><b>City - </b>Nagapattinam</p></div>";
+                	var infowindow113 = new google.maps.InfoWindow({
+                		content: data
+                	});
+
+                	var marker113 = new google.maps.Marker({
+                		position: new google.maps.LatLng(10.815278,79.805941),
+                		map: map,
+                		title: '',
+                		icon: 'assets/images/marker.png'
+                	});
+                	google.maps.event.addListener(marker113, 'click', function() {
+                		if( prev_infowindow ) {
+                			prev_infowindow.close();
+                		}
+                		prev_infowindow = infowindow113;
+                		infowindow113.open(map,marker113);
+                	});
+
+                	                	var data = "<div style='width:100%;float:right;'><p><b>Category - </b>Energy</p><p><b>Project Title - </b>Topography Survey & Geotechnical Investigation for EPCM-2 Package for 9 MMTPA Cauvery Basin Refinery Project (CBR) Project, Nagapattinam, Tamilnadu</p> <p><b>Client - </b>Chennai Petroleum Corporation Limited</p> <p><b>City - </b>Nagapattinam</p></div>";
+                	var infowindow119 = new google.maps.InfoWindow({
+                		content: data
+                	});
+
+                	var marker119 = new google.maps.Marker({
+                		position: new google.maps.LatLng(10.835015,79.817228),
+                		map: map,
+                		title: '',
+                		icon: 'assets/images/marker.png'
+                	});
+                	google.maps.event.addListener(marker119, 'click', function() {
+                		if( prev_infowindow ) {
+                			prev_infowindow.close();
+                		}
+                		prev_infowindow = infowindow119;
+                		infowindow119.open(map,marker119);
+                	});
+
+                	                	var data = "<div style='width:100%;float:right;'><p><b>Category - </b>Energy</p><p><b>Project Title - </b>Geotechnical Investigations for Plant Area, Makeup Water Channel in River, Make-up Water Pipeline Corridor (About 28 Km) and Ash Pipeline Corridor for Talcher-III (2x660 MW), Odisha</p> <p><b>Client - </b>NTPC Limited</p> <p><b>City - </b>Talcher</p></div>";
+                	var infowindow120 = new google.maps.InfoWindow({
+                		content: data
+                	});
+
+                	var marker120 = new google.maps.Marker({
+                		position: new google.maps.LatLng(21.066988,85.119625),
+                		map: map,
+                		title: '',
+                		icon: 'assets/images/marker.png'
+                	});
+                	google.maps.event.addListener(marker120, 'click', function() {
+                		if( prev_infowindow ) {
+                			prev_infowindow.close();
+                		}
+                		prev_infowindow = infowindow120;
+                		infowindow120.open(map,marker120);
+                	});
+
+                	                	var data = "<div style='width:100%;float:right;'><p><b>Category - </b>Energy</p><p><b>Project Title - </b>Geotechnical Investigation work for 2 MMTPA for Green PVC Complex (Inside SEZ Premises) Village-Vandh, Taluka-Mundra, Distt. Kutch, Gujarat</p> <p><b>Client - </b>Mundra Petrochem Limited</p> <p><b>City - </b>Mundra</p></div>";
+                	var infowindow121 = new google.maps.InfoWindow({
+                		content: data
+                	});
+
+                	var marker121 = new google.maps.Marker({
+                		position: new google.maps.LatLng(22.797724,69.575312),
+                		map: map,
+                		title: '',
+                		icon: 'assets/images/marker.png'
+                	});
+                	google.maps.event.addListener(marker121, 'click', function() {
+                		if( prev_infowindow ) {
+                			prev_infowindow.close();
+                		}
+                		prev_infowindow = infowindow121;
+                		infowindow121.open(map,marker121);
+                	});
+
+                	                	var data = "<div style='width:100%;float:right;'><p><b>Category - </b>Metro and Railway</p><p><b>Project Title - </b>Geotechnical Investigation for Stations on Janakpuri West to R.K. Ashram Corridor (Line-8 Ext.) of Phase-IV of Delhi MRTS (DC-05)</p> <p><b>Client - </b>AFCONS Infrastructure Limited</p> <p><b>City - </b>Janakpuri</p></div>";
+                	var infowindow122 = new google.maps.InfoWindow({
+                		content: data
+                	});
+
+                	var marker122 = new google.maps.Marker({
+                		position: new google.maps.LatLng(28.695184,77.188434),
+                		map: map,
+                		title: '',
+                		icon: 'assets/images/marker.png'
+                	});
+                	google.maps.event.addListener(marker122, 'click', function() {
+                		if( prev_infowindow ) {
+                			prev_infowindow.close();
+                		}
+                		prev_infowindow = infowindow122;
+                		infowindow122.open(map,marker122);
+                	});
+
+                	
+                }
+
+                $('form').submit(function(e){
+                	var emptyinputs = $(this).find('select').filter(function(){
+                		return !$.trim(this.value).length;
+                	}).prop('disabled',true);    
+                });
+            </script>
+                        <script>
+
+            	$(document).ready(function() {
+            		var stickyNavTop = $('.container.nav-border').offset().top;
+            		var stickyNav = function(){
+            			var scrollTop = $(window).scrollTop();
+
+            			if (scrollTop > stickyNavTop) { 
+            				$('.container.nav-border').addClass('sticky');
+            			} else {
+            				$('.container.nav-border').removeClass('sticky'); 
+            			}
+            		};
+            		stickyNav();
+            		$(window).scroll(function() {
+            			stickyNav();
+            		});
+
+            		$(".popopenclsb2b").click(function(){
+            			// e.preventDefault();                           
+		                var namew=  $( this ).attr("name");
+		                var docurl = $(this).attr("docurl");
+		                $("input#document_name").attr('value', namew);
+		                $("input#document_name_url").attr('value', docurl);
+		                
+		                //$("#popform1").css("display", "none");
+		                //$("#contactForm").css("display", "block");
+		                $("#myModal").css("display", "block");
+		            });
+
+		            $("span.close").click(function(){	
+		                $("#myModal").css("display", "none");
+		            });
+		            
+            	});
+
+            </script>
+            </div>
+<!-- Footer Content -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+  <div class="row">
+    <footer>
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h4>QUICK LINKS</h4>
+            <ul class="footer_nav">
+              <li><a href="https://www.cengrs.com/about"> About us </a></li>
+              <li><a href="https://www.cengrs.com/services"> Services </a></li>
+              <li><a href="https://www.cengrs.com/projects"> Projects </a></li>
+              <li><a href="https://www.cengrs.com/clients"> Clients </a></li>
+              <li><a href="https://www.cengrs.com/knowledge"> Knowledge Center </a></li>
+              <li><a href="https://www.cengrs.com/career"> Careers </a></li>
+              <li><a href="https://www.cengrs.com/contact"> Contact </a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 certficate_mobile">
+            <h4>CERTIFICATION</h4>
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/NABL-Certificate-TC-7134.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/logo2.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/NABL-Certificate-TC-7134.pdf" target="_blank">ISO/IEC:17025:2017 <br> NABL Accredited Laboratory</a>
+            </div>
+
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/ISO-Certificate-updated.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/ISO-45001_Certificate.jpg" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/ISO-Certificate-updated.pdf" target="_blank">ISO: 9001 : 2015 <br> Certified Company</a>
+            </div> 
+
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/ISO-45001_Certificate_Cengrs.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/ISO-45001_Certificate.jpg" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/ISO-45001_Certificate_Cengrs.pdf" target="_blank">ISO 45001:2018 <br> Certified Company</a>
+            </div>
+            <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/MSME-Certificate.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/msme-logo.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/MSME-Certificate.pdf" target="_blank" style="margin-top:18px;">MSME Certification</a>
+            </div>
+       <!--     <div class="cert_mobile">
+              <a href="https://www.cengrs.com/assets/pdf/NSIC-Certificate.pdf" target="_blank"><img src="https://www.cengrs.com/assets/images/nsic.png" class="img-responsive"></a>
+              <a href="https://www.cengrs.com/assets/pdf/NSIC-Certificate.pdf" target="_blank" style="margin-top:15px;">NSIC Certification</a>
+            </div> -->
+
+            <div style="margin-top:15px;">
+              <a class="custom_buttom" href="https://www.cengrs.com/assets/pdf/Cengrs-Company-Profile.pdf" target="_blank" style="padding-left:15px;padding-right:15px;"> 
+                Company Profile
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 contact_form_mobile">
+            <h4>CONTACT ADDRESS</h4>
+                            <p>A-100, Sector 63, Noida, Uttar Pradesh 201309</p>
+              <p>Call: +91 120 420 6771</p>
+              <p>GSTIN  09AAACC0043N1ZS (Noida)</p>
+              <p>GSTIN 07AAACC0043N1ZW (Delhi)</p>
+              <p>Email: <a href="mailto:contact@cengrs.com">contact@cengrs.com</a></p>
+              <div class="footer_social">
+                Follow us 
+                <a href="https://www.facebook.com/cengrs" target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/fb.png">
+                </a>
+                <a href="https://www.linkedin.com/company/cengrs-geotechnica-pvt.-ltd." target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/in.png">
+                </a>
+                <a href="https://plus.google.com/+CengrsGeotechnica" target="_blank">
+                  <img src="https://www.cengrs.com/assets/images/google.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div> <!-- End of col-lg-12 for footer -->
+
+  <!-- Scroll to top -->
+  <span id="s_top"> </span>
+
+  <script src="https://www.cengrs.com/assets/js/script.js"></script>
+  <script src="https://www.cengrs.com/assets/js/jquery_mobile.min.js"></script>
+  <script>
+    document.querySelector("#nav-toggle").addEventListener("click", function() { this.classList.toggle("active"); });
+    $(document).ready(function(){
+      $('#nav-toggle').click(function(){
+        $('#m_menu').slideToggle().css('display','block');
+      });
+      
+       $(".carousel").swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+          if (direction == 'left') $(this).carousel('next');
+          if (direction == 'right') $(this).carousel('prev');
+        },
+        allowPageScroll:"vertical"
+      });
+    });
+  </script>
+</body>
+</html>
+
