@@ -140,27 +140,6 @@
         width: 100%;
       }
 
-      ol {
-          counter-reset: main-counter, sub-counter;
-          list-style-type:none;
-          padding:0;
-        }
-        li {
-          counter-increment: main-counter;
-          counter-reset: sub-counter;
-        }
-        li::before {
-          content: counter(main-counter) ". ";
-        }
-        li.sub-item {
-          counter-increment: sub-counter;
-          padding-left:1em;
-          counter-reset: none;
-        }
-        li.sub-item::before {
-          content: counter(sub-counter, lower-alpha) ". ";
-        }
-
       @media screen and (max-width:1199px) {
         .slideshow-container {
           padding-top: 0px;
@@ -668,7 +647,7 @@
                     of the Company Registrar <br> Certification of Incorporation of Company</a>
                 </div>
                 <div style="margin-top:15px;">
-                  <a class="custom_buttom" href="assets/upload/Company_Profile.pdf" target="_blank"
+                  <a class="custom_buttom" href="assets/upload/Company_Profile_2023.pdf" target="_blank"
                     style="padding-left:15px;padding-right:15px;">
                     Company Profile
                   </a>
