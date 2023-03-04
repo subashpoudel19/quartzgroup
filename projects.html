@@ -204,7 +204,7 @@ Additional Styles (required)
           <div class="content_know">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="mytable">
-                <table class="table table-striped" border="0">
+                <table class="table table-striped">
                   <style type="text/css">
                     body
                     {
@@ -1360,12 +1360,54 @@ Additional Styles (required)
                     
                   </tbody>
                 </table>
-                <div style="float:right;"></div>
+
+                <div style="float:right;">
+                <ui class="pagination">
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=1" rel="prev">«</a>
+                  </li>
+                  <li class="active">
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=2">2</a>
+                  </li>
+                  
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=3">3</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=4">4</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=5">5</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=6">6</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=7">7</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=8">8</a>
+                  </li>
+                  <li>
+                    <a href="https://www.quartzgroup.com.np/projects?page=9">9</a>
+                  </li>
+                </ui>
+                </div>
               </div>
             </div>
           </div> <!-- End of content_know -->
         </div>
       </div>
+      <script>
+        $('form').submit(function(e){
+          var emptyinputs = $(this).find('select').filter(function(){
+            return !$.trim(this.value).length;
+          }).prop('disabled',true);    
+        });
+      </script>
     </div>
     <!-- Footer Content -->
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
