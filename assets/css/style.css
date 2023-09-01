@@ -1343,6 +1343,8 @@ span.header {
     width: 145px !important;
     height: 145px !important;
     border-radius: 0px !important;
+    align-items: center;
+    text-align: center;
 }
 
 .newtesti {
